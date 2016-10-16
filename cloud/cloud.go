@@ -1,7 +1,7 @@
 package cloud
 
 type cloud struct{
-	Unit IUnit
+	Unit ICloudUnit
 }
 
 type ICloud interface{
