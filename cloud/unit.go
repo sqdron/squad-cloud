@@ -20,11 +20,12 @@ type TokenSource struct {
 }
 
 type UnitCreateRequest struct {
-	Token string
-	Name   string
-	Region string
-	Size   string
-	Image  string
+	Token  string        `json:"token"`
+	Name   string        `json:"name"`
+	Region string        `json:"region"`
+	Size   string        `json:"size"`
+	Image  string        `json:"image"`
+	Key    int           `json:"key,string,omitempty"`
 }
 
 type ICloudUnit interface {
